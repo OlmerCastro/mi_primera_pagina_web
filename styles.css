@@ -1,0 +1,507 @@
+body{
+    color: #5d6063;
+    background-color: #eaedf0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;   
+}
+.logo img{
+    height: 8em;
+    width: 10em;
+    margin: 0.1em;
+    padding: 0.1em;
+    border: 0.1em solid black;       
+}
+.cerca-imagen img{
+    height: 10em;
+    width: 7em;
+    margin: 1em;
+    padding: 1em;
+    border: 0.1em solid black;  
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+li{
+    display: list-item;   
+}
+header{
+    background-color: blue;
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px; 
+    width: 100%;      
+}
+header nav{
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px auto;
+    height: 100%;
+}
+header nav ul{
+    display: flex;    
+    margin-right: 10px;
+    float: right;    
+}
+header nav ul li{
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 4px;     
+}
+header nav ul li a{
+    color: white;
+    font-size: 1em;
+    margin: 8px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+}
+header a i{
+    color: red;
+    padding: 0.1em;
+    font-size: 1em;
+    
+}
+header li a.active, li a:hover{
+    background: darkred;
+    border-radius: 50%;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.seccion-1 {
+    background-color: #eeee;
+    padding: 1em;
+    margin: 1em;    
+    text-align: right;    
+    display: flex; 
+    font-size: 0.5em;
+    flex-wrap:wrap-reverse;
+}
+.acerca-de{
+    align-items: center;
+    justify-content: center;
+    padding: 0.1em;
+    margin: 0.1em;    
+    width: 50%;
+    text-align: right; 
+    margin-right: 2em;
+}
+.seccion-2 img{    
+    height: 8em;
+    width: 100%;    
+}
+div{
+    display: block;
+    
+}
+.trabajos{
+    background-color: #c9d2ff;
+}
+.trabajos h2{
+    font-size: 0.8em;
+    color: #001B79;
+}
+h3{
+    display: block;
+    font-size: 1.8em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #FFC436;
+}
+.clase-principal{
+    font-size: 40px;
+    color: #071952;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;        
+}
+.card-container{
+    margin: 0.1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    border: 0.1em solid black;
+    border-radius: 5%;
+    padding: 0.1em;
+    height: 12em;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;    
+}
+.image-container{
+    border: 0.1em solid black;
+    border-radius: 5%;
+    width: 80%;
+    height: 60%;
+    display: flex;
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    display: flex;
+}
+.card .card-titulo{
+    font-size: 0.7em;    
+    text-align: left;
+    color: red;
+    width: 100%;
+    margin: 1px;
+    padding: auto;
+    display: flex;
+}
+.card .card-parrafo{
+    font-size: 0.6em;    
+    text-align: left;
+    color: #002415;
+    margin: 1px;
+    padding: auto;
+    width: 100%;
+    display: flex;  
+}
+.card .card-a{
+    font-size: 0.7em;
+    color: #0819b6;               
+    padding: 1px 5px;
+    width: 100%;
+    display: flex;  
+}
+.card .card-a:hover{
+    color: #7b131a;
+    background-color:#FFC436;
+    display: flex;
+}
+footer{
+    background-color: #2B2A4C;    
+    padding: 1em;
+    clear: both;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#footer nav ul li{
+    margin-top: 0.1em;    
+}
+
+#footer nav ul li a{    
+    color: #FFFBF5;
+    font-size: 1.5em;
+}
+
+#footer a{
+    text-decoration: none;
+}
+
+a i{
+    position: fixed;
+    bottom: 0.5em;
+    right: 0.5em;
+    font-size: 2em;
+}
+
+/* ESTILOS FORMULARIO*/
+/* -------------- CSS General ------------ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------ Encabezado Contacto ------------------*/
+
+.form-header{
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    width: 80%;
+    margin: auto auto;
+    padding: 10px;
+}
+.form-header h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.form-header p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/* ------------- Formulario ------------- */
+
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 100%;
+    padding: 50px;
+    margin: 10px 0 10px 0;
+}
+
+/* ---------- Campos del Formulario -------- */
+.form-row{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;   
+}
+
+.form-row input[type="text"]{
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;    
+}
+.form-row input[type="email"]{
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+}
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial; 
+    font-size: 20px;
+    
+}
+
+.form-row textarea {
+    font-family: "Georgia, 'Times New Roman', Times, serif";
+    font-size: 20px;  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+    min-height: 150px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;  
+    width: 100%;
+}
+
+/* ------------ Boton Enviar ------------------*/
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #5995da;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.form-row button:hover {
+    background-color: #76aeed;
+}
+.form-row button:active {
+    background-color: #407fc7;
+}
+.alertas{
+    font-size: 20px;
+    color: blue;    
+}
+
+.alertas:hover{
+    font-size: 25px;
+    color: red;
+
+    
+}
+   
+    
+/*MEDIA QUERY*/
+
+
+@media (max-width: 767px) {
+    
+    
+    .clase-principal{
+        background-color: #f0f0f0;
+        font-size: 40px;
+        color: #C70039;
+    }
+    .acerca-de{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;        
+    }
+    .cerca-imagen {
+        display:block;
+        margin: auto;
+        border-radius: 5%;
+    }
+    .card-container{
+        width: 100%;
+    }
+    .checkbtn{
+        display: block;
+    }
+    header{
+        background-color: #2B2A4C;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        
+    }
+       
+    header nav{
+        width: 80px;
+        height: 100%;
+        margin: 0;
+       
+    }
+ 
+    header nav ul{  
+        position: fixed;
+        width: 100%;      
+        height: 100vh;
+        background: #124f70;        
+        text-align: center;
+
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+    
+       
+    header nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+        
+    header nav ul li a{
+        font-size: 20px;        
+        color: #fffe55;
+
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        display: block;
+    }
+        
+    .acerca-de{
+        text-align: center;
+        margin: 1px;
+        padding: 1px;
+    }    
+    .cerca-imagen{
+        margin-bottom: 1px;
+       
+        
+    }
+    h2 .fuente-acento{
+        text-align: center;
+    }
+    
+    /* ACTIVE */
+    header.active{
+        height: 100vh;
+    }
+    header.active ul.menu {
+        opacity: 1;
+    }
+    
+}
+
+/* ----------- ESTILOS FORMULARIO ----------*/
+@media only screen and (min-width: 767px) {
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+   
+    .form-row input[type="text"]{
+        width: 100%;
+        height: initial;
+    }
+    .form-row input[type="email"] {
+      width: 100%;
+      height: initial;
+    }
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+    .form-row textarea {
+        width: 100%;
+    }
+    .form-row button {
+        margin-left: 1px;
+    }
+    .alertas{
+        font-size: 20px;
+        color: blue;  
+        
+    }    
+    .alertas:hover{
+        font-size: 25px;
+        color: red;   
+        
+    }
+    
+}
+
+@media (min-width: 768px){
+    .card-container{
+        width: 47%;        
+    }
+    .clase-principal{
+        font-size: 40px;
+        color: #004225;
+    }   
+}
+
+@media (min-width: 1024px){
+    .card-container{
+        width: 32%;        
+    }
+}
+
+
+
+    
+    
+   
+
+
+
+
